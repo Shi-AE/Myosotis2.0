@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admin">
+
+    <select id="selectByAccount" resultType="Cipher">
+        select cipher_text, salt
+        from t_admin
+        where handle = #{account};
+    </select>
+
+    <update id="updatePasswordByAccount">
+        update t_admin
+        set cipher_text = #{cipherText},
+            salt        = #{salt}
+        where handle = #{handle};
+    </update>
+
+    <insert id="insertAdmin">
+        insert into t_admin (handle, cipher_text, salt, contact)
+        values (#{handle}, #{cipherText}, #{salt}, #{contact});
+    </insert>
+
+    <select id="selectAllAdmin" resultType="Admin">
+        select id,contact from t_admin;
+    </select>
+
+</mapper>

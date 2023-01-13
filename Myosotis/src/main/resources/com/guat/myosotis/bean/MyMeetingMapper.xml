@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="myMeeting">
+
+    <insert id="insert">
+        insert into t_my_meeting (title, start_time, end_time, note,employ_id)
+        values (#{title},#{startTime},#{endTime},#{note},#{employId});
+    </insert>
+
+    <select id="selectAllByEmploy" resultType="MyMeeting">
+        select id,title,start_time,end_time from t_my_meeting where employ_id = #{employId};
+    </select>
+
+    <delete id="deleteById">
+        delete from t_my_meeting where id = #{id};
+    </delete>
+
+</mapper>

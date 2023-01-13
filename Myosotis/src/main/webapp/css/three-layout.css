@@ -1,0 +1,16 @@
+html,body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body header,
+body footer {
+    padding: 10px;
+}
+
+body main {
+    flex: 1;
+}

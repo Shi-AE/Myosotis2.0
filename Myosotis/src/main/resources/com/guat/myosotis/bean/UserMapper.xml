@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+
+    <select id="selectByEmil" resultType="Cipher">
+        select cipher_text, salt
+        from t_user
+        where emil = #{emil};
+    </select>
+
+    <select id="selectByPhoneNumber" resultType="Cipher">
+        select cipher_text, salt
+        from t_user
+        where phone_number = #{phoneNumber};
+    </select>
+
+    <update id="updateTokenByEmil">
+        update t_user
+        set token = #{token}
+        where emil = #{emil};
+    </update>
+
+    <update id="updateTokenByPhoneNumber">
+        update t_user
+        set token = #{token}
+        where phone_number = #{phoneNumber};
+    </update>
+
+    <select id="selectByToken" resultType="User">
+        select emil, phone_number
+        from t_user
+        where token = #{token};
+    </select>
+
+    <insert id="insertUser">
+        insert into t_user (phone_number, emil, cipher_text, salt, employ_id)
+        values (#{phoneNumber}, #{emil}, #{cipherText}, #{salt}, #{employId});
+    </insert>
+
+    <select id="selectEmployIdByPhoneNumber" resultType="String">
+        select employ_id
+        from t_user
+        where phone_number = #{phoneNumber};
+    </select>
+
+    <select id="selectEmployIdByEmil" resultType="String">
+        select employ_id
+        from t_user
+        where emil = #{emil};
+    </select>
+
+    <update id="updatePasswordByEmil">
+        update t_user
+        set cipher_text = #{cipherText},
+            salt        = #{salt},
+            token       = #{token}
+        where emil = #{emil};
+    </update>
+
+    <update id="updatePasswordByPhoneNumber">
+        update t_user
+        set cipher_text = #{cipherText},
+            salt        = #{salt},
+            token       = #{token}
+        where phone_number = #{phoneNumber};
+    </update>
+
+</mapper>

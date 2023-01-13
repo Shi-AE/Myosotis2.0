@@ -1,0 +1,69 @@
+header .logo {
+    width: 362px;
+    height: 94px;
+    
+    background-repeat: no-repeat;
+    background-image: url(../../img/logo.png);
+    background-size: 100%;
+    background-position: 0 10px;
+
+    margin: auto;
+}
+
+header .tip {
+    margin: auto;
+
+    width: 300px;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tip i {
+    margin: 0 20px;
+
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.form .i {
+    text-align: center;
+}
+
+.tip i:first-child {
+    float: left;
+}
+
+.tip i:last-child {
+    float: right;
+}
+
+main .form {
+    margin: 60px auto;
+    width: 430px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255);
+    opacity: 0.92;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
+}
+
+.form .btn {
+    width: 100%;
+}
+
+.register a:last-child {
+    float: right;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}

@@ -1,0 +1,126 @@
+main .work {
+    background-color: #1f2740;
+    color: #ffffff;
+}
+
+.Orbit,
+.Planet,
+#sun {
+    cy: 50%;
+    cx: 50%;
+}
+
+svg {
+    width: 100%;
+    height: 1000px;
+    background-color: #1f2740;
+}
+
+#sun {
+    r: 20px;
+    fill: red;
+}
+
+
+
+.Orbit{
+    stroke: #f8f3dc;
+    fill: transparent;
+}
+
+#Mercury-Orbit {
+    r: 38px;
+}
+
+#Venus-Orbit {
+    r: 72px;
+}
+
+#Earth-Orbit {
+    r: 100px;
+}
+
+#Mars-Orbit {
+    r: 130px;
+}
+
+#Jupiter-Orbit {
+    r: 190px;
+}
+
+#Saturn-Orbit {
+    r: 240px;
+}
+
+#Uranus-Orbit {
+    r: 300px;
+}
+
+#Neptune-Orbit {
+    r: 380px;
+}
+
+.Planet {
+    r: 10px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg)
+                translate(var(--translate))
+                rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+                translate(var(--translate)) 
+                rotate(-360deg);
+    }
+}
+
+#Mercury {
+    fill: #AEB7BA;
+    --translate: 38px;
+    animation: rotation 4s linear infinite;
+}
+
+#Venus {
+    fill: #F8C711;
+    --translate: 72px;
+    animation: rotation 7.57s linear infinite;
+}
+
+#Earth {
+    fill: #1176AE;
+    --translate: 100px;
+    animation: rotation 10.52s linear infinite;
+}
+
+#Mars {
+    fill: #60102D;
+    --translate: 130px;
+    animation: rotation 13.68s linear infinite;
+}
+
+#Jupiter {
+    fill: #58A822;
+    --translate: 190px;
+    animation: rotation 20s linear infinite;
+}
+
+#Saturn {
+    fill: #94357D;
+    --translate: 240px;
+    animation: rotation 30s linear infinite;
+}
+
+#Uranus {
+    fill: #5C3719;
+    --translate: 300px;
+    animation: rotation 50s linear infinite;
+}
+
+#Neptune {
+    fill: #7C1670;
+    --translate: 380px;
+    animation: rotation 100s linear infinite;
+}

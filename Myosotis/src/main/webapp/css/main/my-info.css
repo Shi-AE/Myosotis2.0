@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?6yv0cz');
+    src: url('fonts/icomoon.eot?6yv0cz#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?6yv0cz') format('truetype'),
+        url('fonts/icomoon.woff?6yv0cz') format('woff'),
+        url('fonts/icomoon.svg?6yv0cz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-group-vertical>.btn-group-vertical {
+    margin: 0;
+    padding: 0px;
+}
+
+.btn-group-vertical>.btn-group-vertical>.btn {
+    height: 50px;
+    line-height: 40px;
+}
+
+.none {
+    display: none;
+}
+
+.appear-action {
+    animation: appear 0.5s;
+}
+
+.home {
+    height: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.home::before {
+    font-family: "icomoon";
+    content: "\e900";
+    margin-right: 10px;
+}
+
+nav button::before {
+    float: left;
+    font-family: "icomoon";
+}
+
+nav button::after {
+    float: right;
+    font-family: "icomoon";
+}
+
+.btn-group-vertical .left::after {
+    content: "\ea44";
+}
+
+.btn-group-vertical .down::after {
+    content: "\ea43";
+}
+
+#set::before {
+    content: "\e994";
+}
+
+#info::before {
+    content: "\e976";
+}
+
+.btn-group-vertical .pilcrow::after {
+    content: "\ea73";
+}
+
+#shield::before {
+    content: "\ea0e";
+}
+
+#privacy::before {
+    content: "\e98f";
+}
+
+#preference::before {
+    content: "\e9da";
+}
+
+#mail::before {
+    content: "\e951";
+}
+
+#safe::before {
+    content: "\e976";
+}
+
+#team::before {
+    content: "\e9bc";
+}
+
+#friend::before {
+    content: "\e972";
+}
+
+main .work {
+    background-color: #F6F6F6;
+}
+
+.work .content {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around; /*对齐方式*/
+}
+
+.content .list,
+.content .problem {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px #1071fa4c;
+}
+
+.content .list {
+    width: 550px;
+}
+
+.content .problem {
+    width:300px;
+    height: 100%;
+}
+
+.list .h {
+    margin: 20px;
+}
+
+.list .edit {
+    display: flex;
+    margin: 20px;
+    height: 90px;
+}
+
+.edit a {
+    width: 30px;
+    font-size: 14px;
+}
+
+.edit .tip {
+    flex: 1;
+}
+
+.list h2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.list .subhead {
+    color: #8590A6;
+    font-size: 14px;
+}
+
+.list h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.problem h3,
+.problem h4 {
+    font-weight: 600;
+    margin: 30px;
+}
+
+.problem h3 {
+    font-size: 19px;
+    
+}
+
+.problem h4 {
+    font-size: 15px;
+}
+
+.problem li {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #8590A6;
+
+    margin: 20px 0px;
+    margin-right: 20px;
+}

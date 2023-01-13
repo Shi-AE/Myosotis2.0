@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register - Myosotis</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/init.css">
+    <link rel="stylesheet" href="../css/three-layout.css">
+    <link rel="stylesheet" href="../css/index/index.css">
+    <link rel="stylesheet" href="../css/index/register.css">
+    <link rel="stylesheet" href="../css/subject-background.css">
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index/register.js?v=1.3.0"></script>
+
+    <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <!-- bootstrap -->
+    <link href="http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- bootstrap-select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="tip"><i>无纸化</i><i>办公更轻松</i></div>
+    </header>
+    <main>
+        <div class="form">
+            <h1>员工注册</h1>
+            <form action="#">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="真实姓名">
+                    <label for="name" class="must">真实姓名</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="job" name="job" placeholder="所在职位">
+                    <label for="job" class="must">所在职位</label>
+                </div>
+                <div class="select">
+                    <label for="dept" class="must">&nbsp;&nbsp;所在部门</label>
+                    <select class="selectpicker show-tick form-control" data-live-search="true" id="dept" name="dept">
+                    </select>
+                </div>
+                <div class="select">
+                    <label for="manager" class="must">&nbsp;&nbsp;上级领导</label>
+                    <select class="selectpicker show-tick form-control" data-live-search="true" id="manager" name="manager">
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label must">&nbsp;&nbsp;入职时间</label>
+                    <input type="date" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="number" name="number" placeholder="手机号码">
+                    <label for="number">手机号码</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="emil" name="emil" placeholder="邮箱地址">
+                    <label for="emil">邮箱地址</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+                    <label for="password" class="must">密码</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="确认密码">
+                    <label for="confirm-password" class="must">确认密码</label>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary">员工注册</button>
+            <hr>
+            <div class="i">注册即代表同意《隐私保护指引》</div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.guat.edu.cn/">发现</a>
+            <a href="https://www.guat.edu.cn/">关于我们</a>
+            <a href="index/contact.html">联系我们</a>
+        </div>
+        <div>
+            <i>&copy; 2020 Myosotis OA</i>
+        </div>
+        <div>
+            <a href="index/report.html">侵权举报</a>
+            <a href="index/report.html">不良信息举报</a>
+            <i>举报邮箱：2021070030101@stu.guat.edu.cn</i>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+main .work,
+.background {
+    position: relative;
+    min-width: 1100px;
+    background-color: #2B2929;
+    padding: 0;
+    z-index: -10;
+}
+
+.bubbles {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.bubble {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 4px;
+    transform: scale(0);
+    animation: bubbling calc(1s * var(--tras)) calc(1s * var(--delay)) linear infinite;
+}
+
+.bubble:nth-child(odd) {
+    background-color: #1071FA;
+    box-shadow: 
+    0 0 0 10px #4FA8EA44,
+    0 0 50px #1071FA,
+    0 0 100px #1071FA;
+}
+
+.bubble:nth-child(even) {
+    background-color: #7B156E;
+    box-shadow: 
+    0 0 0 10px #7B156E44,
+    0 0 50px #7B156E,
+    0 0 100px #7B156E;
+}
+
+@keyframes bubbling {
+    from {
+        transform: translateY(100vh) scale(0);
+    }
+    to {
+        transform: translateY(-10vh) scale(1);
+    }
+}

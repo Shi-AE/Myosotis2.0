@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="announce">
+
+    <insert id="insert">
+        insert into t_announce (title, content, url)
+        VALUES (#{title}, #{content}, #{url});
+    </insert>
+
+    <select id="selectAll" resultType="Announce">
+        select id, title, content, url
+        from t_announce;
+    </select>
+
+    <select id="selectUrlById" resultType="String">
+        select url
+        from t_announce
+        where id = ${id};
+    </select>
+
+    <delete id="deleteById">
+        delete
+        from t_announce
+        where id = ${id};
+    </delete>
+
+</mapper>

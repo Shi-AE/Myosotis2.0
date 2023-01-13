@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="employ">
+
+    <select id="selectEmployIdByName" resultType="String">
+        select employ_id
+        from t_employ
+        where name = #{name};
+    </select>
+
+    <insert id="insertEmploy">
+        insert into t_employ (employ_id, name, job, hire_date, manager_id, dept_id)
+        values (#{employId}, #{name}, #{job}, #{hireDate}, #{managerId}, #{deptId});
+    </insert>
+
+    <select id="selectAllName" resultType="String">
+        select name
+        from t_employ;
+    </select>
+
+    <select id="selectNameByEmployId" resultType="String">
+        select name
+        from t_employ
+        where employ_id = #{employId};
+    </select>
+
+</mapper>

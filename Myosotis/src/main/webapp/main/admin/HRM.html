@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 清除缓存 -->
+     <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myosotis - 人员管理</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/init.css">
+    <link rel="stylesheet" href="../../css/three-layout.css">
+    <link rel="stylesheet" href="../../css/main/main.css">
+    <link rel="stylesheet" href="../../css/main/admin/HRM.css">
+
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/main/main.js"></script>
+    <script src="../../js/main/admin/HRM.js"></script>
+    <script src="../../js/main/admin.js"></script>
+    
+</head>
+<body>
+    <!-- <header class="shadow">
+        <div class="log"></div>
+        <nav>
+            <div class="user">我的信息</div>
+            <button type="button" class="btn btn-danger exit">退出系统</button>
+        </nav>
+    </header> -->
+    <main>
+        <!-- <nav>
+            <div class="btn-group-vertical">
+                <a href="home.html" class="btn btn-outline-success nav-button" id="home">首页</a>
+                <a href="announce.html" class="btn btn-outline-success nav-button" id="announce">公告管理</a>
+                <a href="HRM.html" class="btn btn-outline-success nav-button" id="HRM">人力资源管理</a>
+                <a href="property.html" class="btn btn-outline-success nav-button" id="property">资产管理</a>
+            </div>
+        </nav> -->
+        <div class="work">
+            <h1>重置用户密码</h1>
+            <div class="resetUser">
+                <form id="resetUser">
+                    <div class="mb-3">
+                        <label for="account" class="form-label">用户账号</label>
+                        <input type="text" class="form-control" id="account" name="account">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">重置密码</label>
+                        <input type="text" class="form-control" id="password" name="password">
+                    </div>
+                    <button type="button" id="resetUserSubmit" class="btn btn-success">重置用户密码</button>
+                </form>
+            </div>
+            <hr>
+            <h1>重置管理员密码</h1>
+            <div class="resetAdmin">
+                <form id="resetAdmin">
+                    <div class="mb-3">
+                        <label for="account" class="form-label">管理员账号</label>
+                        <input type="text" class="form-control" id="account" name="account">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">重置密码</label>
+                        <input type="text" class="form-control" id="password" name="password">
+                    </div>
+                    <button type="button" id="resetAdminSubmit" class="btn btn-success">重置管理员密码</button>
+                </form>
+            </div>
+            <hr>
+            <h1>新增管理员</h1>
+            <div class="updateAdmin">
+                <form id="updateAdmin">
+                    <div class="mb-3">
+                        <label for="account" class="form-label">用户账号</label>
+                        <input type="text" class="form-control" id="account" name="account">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">管理员密码密码</label>
+                        <input type="text" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">联系方式</label>
+                        <input type="text" class="form-control" id="contact" name="contact">
+                    </div>
+                    <button type="button" id="updateAdminSubmit" class="btn btn-success">新增管理员</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

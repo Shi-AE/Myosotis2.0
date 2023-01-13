@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="suggest">
+
+    <insert id="insert">
+        insert into t_suggest (target, content, sender) values (#{target},#{content},#{sender});
+    </insert>
+
+    <select id="selectAll" resultType="Suggest">
+        select id,sender,content from t_suggest where target = #{target};
+    </select>
+
+    <delete id="deleteById">
+        delete from t_suggest where id = #{id};
+    </delete>
+
+</mapper>

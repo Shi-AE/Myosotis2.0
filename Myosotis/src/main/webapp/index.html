@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myosotios</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/three-layout.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/index/err.css">
+    <link rel="stylesheet" href="css/video-background.css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="tip"><i>无纸化</i><i>办公更轻松</i></div>
+    </header>
+    <main>
+        <div class="form">
+            <!-- is-invalid   爆红属性-->
+            <ul class="nav nav-pills mb-3 fs-6" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">用户登录</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">管理员登录</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form action="#">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="user-account" name="account" placeholder="邮箱地址或手机号">
+                            <label for="user-account">邮箱地址或手机号</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="user-password" name="password" placeholder="密码">
+                            <label for="user-password">密码</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="user-remember" name="remember" value="remember">
+                            <label class="form-check-label" for="user-remember">
+                            下次自动登录
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="user-submit">用户登录</button>
+                        <div class="register fs-6">
+                            <a href="common/register.html" class="link-info">注册账户</a>
+                            <a href="common/forgetPassword.html" class="link-info">忘记密码</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <form action="#">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="admin-account" name="account" placeholder="管理员账号">
+                            <label for="admin-account">管理员账号</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="admin-password" name="password" placeholder="密码">
+                            <label for="admin-password">密码</label>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="admin-submit">管理员登录</button>
+                        <div class="register fs-6">
+                            <a href="common/adminRegister.html" class="link-info">管理员注册</a>
+                            <a href="common/forgetPassword.html" class="link-info">忘记密码</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="i">注册即代表同意《隐私保护指引》</div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.guat.edu.cn/">发现</a>
+            <a href="https://www.guat.edu.cn/">关于我们</a>
+            <a href="common/contact.html">联系我们</a>
+        </div>
+        <div>
+            <i>&copy; 2020 Myosotis OA</i>
+        </div>
+        <div>
+            <a href="common/report.html">侵权举报</a>
+            <a href="common/report.html">不良信息举报</a>
+            <i>举报邮箱：2021070030101@stu.guat.edu.cn</i>
+        </div>
+    </footer>
+    <video src="video/background.mp4" autoplay loop muted></video>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.work {
+    padding: 0 50px;
+}
+
+.work .delete {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.delete .option {
+    height: 45px;
+    margin: 5px 10px;
+    border: 2px #87B7FF solid;
+    border-radius: 10px;
+}
+
+.delete .option:hover {
+    border: 2px #2170e7 solid;
+}
+
+.option p {
+    float: left;
+    line-height: 39px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.option button {
+    float: right;
+    margin: 0 10px;
+}

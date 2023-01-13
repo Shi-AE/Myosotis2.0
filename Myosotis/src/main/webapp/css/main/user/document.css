@@ -1,0 +1,33 @@
+h1 {
+    text-align: center
+}
+
+.recept .option {
+    font-size: 17px;
+
+    margin: 5px 10px;
+    padding: 3px;
+
+    border: 2px #87B7FF solid;
+    border-radius: 10px;
+}
+
+.recept .option:hover {
+    border: 2px #2170e7 solid;
+}
+
+.option div {
+    margin: 10px;
+}
+
+.option .name {
+    font-size: 17px;
+}
+
+.option .note {
+    font-size: 14px;
+}
+
+.delete {
+    float: right;
+}

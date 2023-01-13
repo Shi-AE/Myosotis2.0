@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+.option {
+    display: flex;
+}
+
+.option input {
+    height: 30px;
+}
+
+.option>div,
+.option>button {
+    width: 20%;
+
+    margin: 5px;
+
+    text-align: center;
+    overflow: auto;
+}
+
+.option>div {
+    font-size: 17px;
+}
+
+.option {
+    margin: 20px 10px;
+    padding: 3px;
+
+    border: 2px #87B7FF solid;
+    border-radius: 10px;
+}
+
+.manager .option:hover {
+    border: 2px #2170e7 solid;
+}
+
+.option input {
+    text-align: center;
+}

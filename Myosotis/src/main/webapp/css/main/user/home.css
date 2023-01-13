@@ -1,0 +1,37 @@
+.work {
+    text-align: center;
+}
+
+.option {
+    display: block;
+
+    color: #1071FA;
+    font-size: 17px;
+
+    margin: 20px 10px;
+    padding: 3px;
+
+    border: 2px #87B7FF solid;
+    border-radius: 10px;
+}
+
+.meeting .option {
+    border: 2px #87B7FF solid;
+}
+
+.mail .option {
+    border: 2px #FD7E14 solid;
+}
+.document .option {
+    border: 2px #6610F2 solid;
+}
+
+.suggest .option {
+    border: 2px #D63384 solid;
+}
+
+.option:hover {
+    border: 2px #2170e7 solid;
+    color: #198754;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.177);
+}

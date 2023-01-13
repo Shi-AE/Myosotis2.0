@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="document">
+
+    <insert id="insert">
+        insert into t_document (target, file, name, note, sender)
+        values (#{target}, #{file}, #{name}, #{note}, #{sender});
+    </insert>
+
+    <select id="selectAll" resultType="Document">
+        select id, name, sender, note
+        from t_document
+        where target = #{target};
+    </select>
+
+    <select id="selectFileById" resultType="_byte[]">
+        select file
+        from t_document
+        where id = #{id};
+    </select>
+
+    <delete id="deleteFileById">
+        delete
+        from t_document
+        where id = #{id};
+    </delete>
+
+</mapper>

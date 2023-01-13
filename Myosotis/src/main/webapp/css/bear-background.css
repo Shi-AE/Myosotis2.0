@@ -1,0 +1,86 @@
+body {
+    background-color: #2B2929;
+    overflow: hidden;
+}
+
+main .work {
+    color: #ffffff;
+}
+
+.bear {
+    position: absolute;
+    bottom: 70px;
+    z-index: -1;
+    width: 200px;
+    height: 100px;
+    background: url(../img/bear.png) no-repeat;
+    transform: translateX(-50%);
+    animation: run 0.4s steps(8) infinite, move 10s linear infinite;
+}
+
+.mountain1 {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 336px;
+    bottom: 0;
+    background: url(../img/bg1.png) repeat;
+    animation: mountain 60s linear infinite;
+}
+
+.mountain2 {
+    position: absolute;
+    opacity: 1;
+    z-index: -3;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    background: url(../img/bg2.png) repeat 0 0;
+    animation: mountain 180s linear infinite;
+}
+
+.mountain3 {
+    position: absolute;
+    opacity: 0.5;
+    z-index: -4;
+    width: 100%;
+    height: 569px;
+    bottom: 0;
+    background: url(../img/bg2.png) repeat -840px 0;
+    animation: mountain 340s linear infinite;
+}
+
+@keyframes mountain {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+        background-position: -3840px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: -10%;
+        
+    }
+    10% {
+        left: 50%;
+        
+    }
+    90% {
+        left: 50%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes run {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}

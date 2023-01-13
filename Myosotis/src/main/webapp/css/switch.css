@@ -1,0 +1,48 @@
+.switch {
+    margin: 24px;
+    display: flex;
+}
+
+.switch .slider {
+    position: relative;
+    height: 8px;
+    width: 32px;
+    margin-top: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #c5c5c5;
+    transition: all 0.2s ease;
+}
+
+.switch .slider:after {
+    background: #eeeeee;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    content: "";
+    transition: all 0.2s ease;
+}
+
+.switch label {
+    margin: 0 8px;
+}
+
+.switch .input {
+    display: none;
+}
+
+.switch .input:checked ~ .slider:after {
+    left: 16px;
+}
+
+.switch .input:checked ~ .slider {
+    background: #4FA8EA;
+}
+
+.switch .input:checked ~ .slider:after {
+    background: #1071FA;
+}

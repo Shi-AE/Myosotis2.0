@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 清除缓存 -->
+<!--     <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myosotis - 会议管理</title>
+    
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/init.css">
+    <link rel="stylesheet" href="../../css/three-layout.css">
+    <link rel="stylesheet" href="../../css/main/main.css">
+    <link rel="stylesheet" href="../../css/main/user/meeting.css">
+
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main/main.js"></script>
+    <script src="../../js/main/user/meeting.js"></script>
+    <script src="../../js/main/user.js"></script>
+    
+</head>
+<body>
+    <!-- <header class="shadow">
+        <div class="log"></div>
+        <nav>
+            <div class="user">我的信息</div>
+            <button type="button" class="btn btn-danger exit">退出系统</button>
+        </nav>
+    </header> -->
+    <main>
+        <!-- <nav>
+            <div class="btn-group-vertical">
+                <a href="home.html" class="btn btn-outline-success nav-button" id="home">首页</a>
+                <a href="announce.html" class="btn btn-outline-success nav-button" id="announce">公告</a>
+                <a href="meeting.html" class="btn btn-outline-success nav-button" id="meeting">会议管理</a>
+                <a href="document.html" class="btn btn-outline-success nav-button" id="document">文档管理</a>
+                <a href="mail.html" class="btn btn-outline-success nav-button" id="mail">邮件管理</a>
+                <a href="suggest.html" class="btn btn-outline-success nav-button" id="suggest">意见管理</a>
+            </div>
+        </nav> -->
+        <div class="work">
+            <form>
+                <div class="mb-3">
+                    <label for="title" class="form-label">会议标题</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                </div>
+                <div class="mb-3">
+                    <label for="start-time" class="form-label">会议开始时间</label>
+                    <input type="datetime-local" class="form-control" name="start-time" id="start-time">
+                </div>
+                <div class="mb-3">
+                    <label for="end-time" class="form-label">会议结束时间</label>
+                    <input type="time" class="form-control" name="end-time" id="end-time">
+                </div>
+                <div class="mb-3">
+                    <label for="note" class="form-label">备注</label>
+                    <textarea class="form-control" id="note" name="note" rows="3"></textarea>
+                </div>
+                <button type="button" id="submit" class="btn btn-success">加入日程</button>
+            </form>
+            <hr>
+            <div class="option">
+                <div>会议标题</div>
+                <div>会议开始时间</div>
+                <div>会议结束时间</div>
+                <div>删除选项</div>
+            </div>
+            <hr>
+            <div class="delete">
+                <!-- <div class="option">
+                    <div class="title">title</div>
+                    <div class="start-time">start-time</div>
+                    <div class="end-time">end-time</div>
+                    <button type="button" index="1" class="btn btn-danger">删除此日程</button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

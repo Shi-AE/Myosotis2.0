@@ -1,0 +1,35 @@
+.err {
+    width: 600px;
+    height: 50px;
+
+    background-color: red;
+    border-radius: 10px;
+
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+
+    position: absolute;
+    left: calc(50% - 300px);
+    top: -50px;
+
+    transition: top 1s;
+
+    animation: err 3s;
+}
+
+@keyframes err {
+    0%{
+        top: -50px;
+    }
+
+    50%{
+        top: 120px;
+    }
+
+    100%{
+        top: -50px;
+    }
+}

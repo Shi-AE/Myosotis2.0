@@ -1,0 +1,113 @@
+main .work,
+.background {
+    position: relative;
+    min-width: 1100px;
+    background-color: #2B2929;
+    z-index: -10;
+}
+
+.word {
+    position: absolute;
+    font-family: "Consolas";
+    font-size: 120px;
+    letter-spacing: 20px;
+    font-weight:bolder;
+    color: #00D2FB;
+    text-shadow: 20px 20px 20px #00ADD8;
+
+    top: 200px;
+    left: calc(50% - 550px);
+    z-index: 10;
+}
+
+.word::after {
+    content: "Myosotis-OA";
+    animation: word 20s infinite;
+}
+
+.word::before {
+    content: "_";
+    float: right;
+    animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor {
+    from {
+        content: "_";
+    }
+    to {
+        content: "";
+    }
+}
+
+@keyframes word {
+    0% {
+        content: "";
+    }
+    6.36% {
+        content: "M";
+    }
+    12.72% {
+        content: "My";
+    }
+    19.08% {
+        content: "Myo";
+    }
+    25.44% {
+        content: "Myos";
+    }
+    31.8% {
+        content: "Myoso";
+    }
+    38.16% {
+        content: "Myosot";
+    }
+    44.52% {
+        content: "Myosoti";
+    }
+    50.88% {
+        content: "Myosotis";
+    }
+    57.24% {
+        content: "Myosotis-";
+    }
+    63.6% {
+        content: "Myosotis-O";
+    }
+    69.96% {
+        content: "Myosotis-OA";
+    }
+    72.72% {
+        content: "Myosotis-O";
+    }
+    75.44% {
+        content: "Myosotis-";
+    }
+    78.16% {
+        content: "Myosotis";
+    }
+    80.88% {
+        content: "Myosoti";
+    }
+    83.6% {
+        content: "Myosot";
+    }
+    86.32% {
+        content: "Myoso";
+    }
+    89.04% {
+        content: "Myos";
+    }
+    91.76% {
+        content: "Myo";
+    }
+    94.48% {
+        content: "My";
+    }
+    97.2% {
+        content: "M";
+    }
+    100% {
+        content: "";
+    }
+}

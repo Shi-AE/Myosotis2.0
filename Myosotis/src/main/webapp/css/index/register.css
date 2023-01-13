@@ -1,0 +1,25 @@
+.form h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    color: #3539BE;
+}
+
+.form .mb-3,
+.form .select {
+    margin: 30px 0;
+}
+
+main .form {
+    width: 700px;
+    padding: 100px;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+    height: 6rem;
+}
+
+.must::after {
+    content: " *";
+    font-size: 16px;
+    color: #dc3545;
+}
